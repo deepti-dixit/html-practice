@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+  
+    <form action="" method="get">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" value="Deepti" autofocus disabled
+            placeholder="Enter your First name...">
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" value="Dixit" readonly placeholder="Enter your Last name..."><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter Your Email...">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" maxlength="10"><br><br>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter Your Username...">
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" name="pwd"><br><br>
+        Gender:
+        <input type="radio" id="Male" name="gender" value="M">
+        <label for="Male">Male</label>
+        <input type="radio" id="female" name="gender" value="F" checked>
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="O">
+        <label for="other">Other</label><br>
+        <label for="addr">Address</label>
+        <textarea name="address" id="addr" cols="30" rows="2"></textarea>
+        <fieldset>
+            <legend align="center">Date Time</legend>
+        <label for="birthday">DOB:</label>
+        <input type="date" id="birthday" name="dob">
+        <label for="birthdaytime">Birthday (date and time):</label>
+        <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+        <label for="bdaymonth">Birthday (month and year):</label>
+        <input type="month" id="bdaymonth" name="bdaymonth">
+        <label for="appt">Select a time:</label>
+        <input type="time" id="appt" name="appt">
+        <label for="week">Select a week:</label>
+        <input type="week" id="week" name="week">
+        </fieldset><br><br>
+        Select Course:
+        <input type="checkbox" id="html" name="course1" value="HTML">
+        <label for="html">Hyper Text Markup Language</label>
+        <input type="checkbox" id="css" name="course2" value="CSS">
+        <label for="css">Cascading Style Sheet</label>
+        <input type="checkbox" id="js" name="course3" value="JS">
+        <label for="js">JavaScript</label><br><br>
+        Select Your City: 
+        <input list="City">
+        <datalist id="City">
+            <option value="Kanpur">
+            <option value="Unnao">
+            <option value="Lucknow">
+            <option value="Delhi">
+            <option value="Noida">
+        </datalist>
+
+        <label for="myfile">Select a file:</label>
+        <input type="file" id="myfile" name="myfile" multiple><br><br>
+
+        <label for="homepage">Add your Website:</label>
+        <input type="url" id="homepage" name="homepage">
+
+        <label for="favcolor">Select your favorite color:</label>
+        <input type="color" id="favcolor" name="favcolor">
+        <input type="hidden" id="custId" name="custId" value="3487">
+        <br><br>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="30">
+        <label for="vol">Price:</label>
+        <input type="range" id="vol" name="vol" min="500" max="50000"><br><br>
+
+        <label for="gsearch">Google Search:</label>
+        <input type="search" id="gsearch" name="search">
+        <input type="image" src="" alt="Submit" width="20" height="20"><br><br>
+
+        <input type="button" value="Update">
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+</body>
+
+</html>
